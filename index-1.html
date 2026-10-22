@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Cumbanetech</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<header class="top"><div class="wrap">
+  <a class="brand" href="#site" aria-label="Cumbanetech">Cumbane<b>tech</b></a>
+  <div class="seg" role="group" aria-label="Área">
+    <button id="nav-site" aria-pressed="true">Loja</button>
+    <button id="nav-gestao" aria-pressed="false">Gestão</button>
+  </div>
+</div></header>
+
+<main class="wrap" id="view-site">
+  <section class="hero">
+    <div>
+      <p class="eyebrow">Computadores · Venda · Assistência</p>
+      <h1>O computador certo, ao preço certo.</h1>
+      <p class="lead">A Cumbanetech vende portáteis, computadores de secretária, monitores e acessórios, com garantia e apoio técnico depois da compra.</p>
+      <div class="cta">
+        <a class="btn primary" href="#catalogo" id="go-cat">Ver catálogo</a>
+        <a class="btn" href="https://wa.me/258877304713?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Cumbanetech." target="_blank" rel="noopener" id="go-contact">Falar no WhatsApp</a>
+      </div>
+    </div>
+    <aside class="spec" aria-label="Como escolher">
+      <h3>Como escolher o seu computador</h3>
+      <dl>
+        <dt>Escritório</dt><dd>Core i3 ou i5, 8 GB de RAM, SSD de 256 GB</dd>
+        <dt>Estudo</dt><dd>Core i5, 8 GB de RAM, ecrã de 14 a 15,6 pol.</dd>
+        <dt>Design</dt><dd>Core i7, 16 GB de RAM, SSD de 512 GB</dd>
+        <dt>Jogos</dt><dd>Core i7 ou Ryzen 7, 16 GB, placa gráfica dedicada</dd>
+      </dl>
+    </aside>
+  </section>
+
+  <section class="block" id="catalogo">
+    <div class="sec-head">
+      <div><p class="eyebrow">Catálogo</p><h2>Equipamentos em stock</h2></div>
+      <div class="chips" id="cat-chips" role="group" aria-label="Categorias"></div>
+    </div>
+    <div class="grid" id="catalog"></div>
+  </section>
+
+  <section class="block">
+    <div class="sec-head"><div><p class="eyebrow">Serviços</p><h2>Depois da compra, continuamos consigo</h2></div></div>
+    <div class="services">
+      <div class="card"><h3>Garantia</h3><p>Todos os equipamentos novos saem com garantia do fabricante e registo na nossa loja.</p></div>
+      <div class="card"><h3>Instalação</h3><p>Entregamos o computador com o sistema operativo e os programas essenciais já instalados.</p></div>
+      <div class="card"><h3>Reparação</h3><p>Diagnóstico, troca de ecrã, teclado, bateria, disco e limpeza interna.</p></div>
+      <div class="card"><h3>Empresas</h3><p>Orçamento para vários computadores, com factura e acompanhamento da sua equipa.</p></div>
+    </div>
+  </section>
+
+  <section class="block" id="contacto">
+    <div class="contact">
+      <div>
+        <p class="eyebrow" style="color:inherit;opacity:.8">Contacto</p>
+        <p class="tel num" id="tel-text">877304713</p>
+        <p style="opacity:.9;margin-top:4px">Ligue ou envie mensagem para pedir preço, reservar ou marcar assistência.</p>
+      </div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap">
+        <a class="btn" id="wa-contact" href="https://wa.me/258877304713?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Cumbanetech." target="_blank" rel="noopener">Abrir WhatsApp</a>
+        <button class="btn" id="copy-tel">Copiar número</button>
+      </div>
+    </div>
+  </section>
+  <footer class="foot-site">© <span id="year"></span> Cumbanetech. Todos os direitos reservados.</footer>
+</main>
+
+<main class="wrap app" id="view-gestao" hidden>
+  <div class="sec-head"><div><p class="eyebrow">Cumbanetech · Gestão</p><h2>Sistema de gestão de vendas</h2></div></div>
+  <div class="tabs" role="tablist" id="tabs">
+    <button role="tab" data-tab="painel" aria-selected="true">Painel</button>
+    <button role="tab" data-tab="vendas" aria-selected="false">Nova venda</button>
+    <button role="tab" data-tab="produtos" aria-selected="false">Produtos e stock</button>
+    <button role="tab" data-tab="clientes" aria-selected="false">Clientes</button>
+  </div>
+  <div id="tab-body"></div>
+  <p class="note">Os dados ficam guardados neste navegador. Os produtos, clientes e vendas iniciais são exemplos e podem ser apagados.</p>
+  <p style="margin-top:8px"><button class="btn sm danger" id="reset-btn">Repor dados de exemplo</button></p>
+</main>
+
+<script src="app.js"></script>
+
+</body>
+</html>
