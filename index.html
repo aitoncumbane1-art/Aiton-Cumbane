@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <!-- viewport: faz o site ajustar-se à largura do telefone -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="CUMBANETECH.Lda — material informático em Moçambique.">
+  <title>CUMBANETECH.Lda | Loja de Informática</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- CABEÇALHO: logótipo (link) + menu de navegação (links) -->
+<header class="topo">
+  <div class="contentor topo-linha">
+    <a class="marca" href="#inicio" aria-label="CUMBANETECH.Lda, página inicial">
+      <span class="marca-sigla">CT</span>
+      <span>CUMBANE<b>TECH</b>.Lda</span>
+    </a>
+    <!-- Caixa de marcação usada para abrir o menu no telefone (sem JavaScript) -->
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="menu-botao" aria-label="Abrir menu">☰</label>
+    <nav class="menu">
+      <a href="#inicio">Início</a>
+      <a href="#produtos">Produtos</a>
+      <a href="#sobre">Sobre nós</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- DESTAQUE: título, texto, botão e imagem principal -->
+  <section class="destaque" id="inicio">
+    <div class="contentor destaque-grelha">
+      <div>
+        <h1>O equipamento certo para estudar e trabalhar</h1>
+        <p>Computadores, acessórios e soluções tecnológicas com preços em meticais e pagamento na entrega.</p>
+        <a class="botao" href="#produtos">Ver produtos</a>
+        <a class="botao botao-claro" href="#contacto">Falar connosco</a>
+      </div>
+      <img src="img/hero.svg" alt="Ilustração de um computador portátil" width="640" height="440">
+    </div>
+  </section>
+
+  <!-- VANTAGENS -->
+  <section class="vantagens">
+    <div class="contentor vantagens-grelha">
+      <p><b>Material de qualidade</b>Para casa e escritório</p>
+      <p><b>Encomenda fácil</b>Em poucos passos</p>
+      <p><b>Preços em meticais</b>Valores claros</p>
+      <p><b>Pague na entrega</b>Sem pagamento online</p>
+    </div>
+  </section>
+
+  <!-- PRODUTOS: cada cartão tem imagem, nome, preço e botão -->
+  <section class="secao contentor" id="produtos">
+    <h2>Produtos em destaque</h2>
+    <p class="nota">Escolha o artigo e encomende pelo contacto da loja.</p>
+    <div class="produtos">
+      <article class="cartao">
+        <img src="img/laptop.svg" alt="Portátil 15 polegadas" width="200" height="160">
+        <h3>Portátil 15"</h3>
+        <p>8 GB RAM · 256 GB SSD</p>
+        <strong class="preco">32.500 MT</strong>
+        <a class="botao" href="#contacto">Encomendar</a>
+      </article>
+      <article class="cartao">
+        <img src="img/rato.svg" alt="Rato sem fios" width="200" height="160">
+        <h3>Rato sem fios</h3>
+        <p>Receptor USB</p>
+        <strong class="preco">450 MT</strong>
+        <a class="botao" href="#contacto">Encomendar</a>
+      </article>
+      <article class="cartao">
+        <img src="img/auscultadores.svg" alt="Auscultadores com microfone" width="200" height="160">
+        <h3>Auscultadores</h3>
+        <p>Com microfone</p>
+        <strong class="preco">1.800 MT</strong>
+        <a class="botao" href="#contacto">Encomendar</a>
+      </article>
+      <article class="cartao">
+        <img src="img/pendrive.svg" alt="Pen drive de 64 GB" width="200" height="160">
+        <h3>Pen drive 64 GB</h3>
+        <p>USB 3.0</p>
+        <strong class="preco">550 MT</strong>
+        <a class="botao" href="#contacto">Encomendar</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- SOBRE NÓS -->
+  <section class="sobre" id="sobre">
+    <div class="contentor sobre-grelha">
+      <div>
+        <h2>A tecnologia que acompanha as suas ideias</h2>
+        <p>A CUMBANETECH.Lda vende material informático e acessórios, com uma experiência simples e preços transparentes.</p>
+      </div>
+      <p class="selo"><b>100%</b>Pagamento na entrega</p>
+    </div>
+  </section>
+
+  <!-- CONTACTO: formulário com campos e botão de envio -->
+  <section class="secao contentor contacto" id="contacto">
+    <div>
+      <h2>Precisa de ajuda?</h2>
+      <p class="nota">Tire dúvidas sobre produtos ou encomendas.</p>
+      <ul class="lista-contacto">
+        <li><a href="tel:+258840000000">Telefone: 84 000 0000</a></li>
+        <li><a href="mailto:geral@cumbanetech.co.mz">geral@cumbanetech.co.mz</a></li>
+      </ul>
+    </div>
+    <form action="#" method="post">
+      <label>Nome<input type="text" name="nome" required></label>
+      <label>Mensagem<textarea name="mensagem" rows="4" required></textarea></label>
+      <button class="botao" type="submit">Enviar mensagem</button>
+    </form>
+  </section>
+</main>
+
+<footer class="rodape">
+  <div class="contentor">
+    <span>© 2026 CUMBANETECH.Lda. Todos os direitos reservados.</span>
+    <a href="#inicio">Voltar ao topo</a>
+  </div>
+</footer>
+
+</body>
+</html>
